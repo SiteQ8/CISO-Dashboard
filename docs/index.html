@@ -10,47 +10,34 @@
   <header>
     <div class="brand">
       <div class="logo">🛡️</div>
-      <div>
+      <div class="titles">
         <h1>CISO Dashboard</h1>
         <p class="tag">Executive Security Posture • Demo Mode</p>
       </div>
     </div>
-    <nav><button id="modeBtn" title="Toggle data source">Live API</button>
-      <a href="#kpis">KPIs</a>
-      <a href="#incidents">Incidents</a>
-      <a href="#vulns">Vulns</a>
-      <a href="#compliance">Compliance</a>
-      <a href="#thirdparty">3rd Party</a>
-      <a href="#risk">Risk</a>
+
+    <nav id="nav" aria-label="Primary">
+      <button id="menuBtn" class="icon-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">☰</button>
+      <button id="modeBtn" class="mode" title="Toggle data source" type="button">Live API</button>
+      <div id="navLinks" class="links">
+        <a href="#kpis">KPIs</a>
+        <a href="#incidents">Incidents</a>
+        <a href="#vulns">Vulns</a>
+        <a href="#compliance">Compliance</a>
+        <a href="#thirdparty">3rd Party</a>
+        <a href="#risk">Risk</a>
+      </div>
     </nav>
   </header>
 
   <main>
     <section id="kpis" class="cards">
-      <div class="card">
-        <h3>Overall Risk</h3>
-        <div id="risk">--</div>
-      </div>
-      <div class="card">
-        <h3>Open Findings</h3>
-        <div id="findings">--</div>
-      </div>
-      <div class="card">
-        <h3>Patch SLA</h3>
-        <div id="sla">--</div>
-      </div>
-      <div class="card">
-        <h3>MTTD</h3>
-        <div id="mttd">--</div>
-      </div>
-      <div class="card">
-        <h3>MTTR</h3>
-        <div id="mttr">--</div>
-      </div>
-      <div class="card">
-        <h3>Last Update</h3>
-        <div id="updated">--</div>
-      </div>
+      <div class="card"><h3>Overall Risk</h3><div id="risk">--</div></div>
+      <div class="card"><h3>Open Findings</h3><div id="findings">--</div></div>
+      <div class="card"><h3>Patch SLA</h3><div id="sla">--</div></div>
+      <div class="card"><h3>MTTD</h3><div id="mttd">--</div></div>
+      <div class="card"><h3>MTTR</h3><div id="mttr">--</div></div>
+      <div class="card"><h3>Last Update</h3><div id="updated">--</div></div>
     </section>
 
     <section id="incidents">
@@ -61,10 +48,12 @@
 
     <section id="vulns">
       <h2>Top Vulnerabilities</h2>
-      <table id="vulnTable">
-        <thead><tr><th>Asset</th><th>CVE</th><th>CVSS</th><th>Exploit</th><th>Age(d)</th><th>Owner</th><th>Status</th><th>Risk</th></tr></thead>
-        <tbody></tbody>
-      </table>
+      <div class="table-wrap">
+        <table id="vulnTable">
+          <thead><tr><th>Asset</th><th>CVE</th><th>CVSS</th><th>Exploit</th><th>Age(d)</th><th>Owner</th><th>Status</th><th>Risk</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
     </section>
 
     <section id="compliance" class="two-col">
@@ -81,26 +70,32 @@
     <section id="thirdparty" class="two-col">
       <div>
         <h2>Third-Party Risk</h2>
-        <table id="tpTable">
-          <thead><tr><th>Vendor</th><th>Tier</th><th>Risk</th><th>Open Issues</th><th>SLA Breaches</th><th>Last Assessed</th></tr></thead>
-          <tbody></tbody>
-        </table>
+        <div class="table-wrap">
+          <table id="tpTable">
+            <thead><tr><th>Vendor</th><th>Tier</th><th>Risk</th><th>Open Issues</th><th>SLA Breaches</th><th>Last Assessed</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
       </div>
       <div>
         <h2>SIEM Top Alerts</h2>
-        <table id="siemTable">
-          <thead><tr><th>Rule</th><th>24h</th><th>7d</th><th>Criticality</th></tr></thead>
-          <tbody></tbody>
-        </table>
+        <div class="table-wrap">
+          <table id="siemTable">
+            <thead><tr><th>Rule</th><th>24h</th><th>7d</th><th>Criticality</th></tr></thead>
+            <tbody></tbody>
+          </table>
+        </div>
       </div>
     </section>
 
     <section id="risk">
       <h2>Risk Register (Top 10)</h2>
-      <table id="riskTable">
-        <thead><tr><th>ID</th><th>Title</th><th>Owner</th><th>Likelihood</th><th>Impact</th><th>Score</th><th>Status</th><th>Target Date</th></tr></thead>
-        <tbody></tbody>
-      </table>
+      <div class="table-wrap">
+        <table id="riskTable">
+          <thead><tr><th>ID</th><th>Title</th><th>Owner</th><th>Likelihood</th><th>Impact</th><th>Score</th><th>Status</th><th>Target Date</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
     </section>
   </main>
 
