@@ -1,0 +1,842 @@
+[
+  {
+    "user": "user1@corp",
+    "type": "suspicious_mfa",
+    "details": "auto-detected pattern",
+    "severity": "High",
+    "ts": "2025-10-12"
+  },
+  {
+    "user": "user2@corp",
+    "type": "new_admin_grant",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-09-29"
+  },
+  {
+    "user": "user3@corp",
+    "type": "disabled_logging",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-10-05"
+  },
+  {
+    "user": "user4@corp",
+    "type": "disabled_logging",
+    "details": "auto-detected pattern",
+    "severity": "High",
+    "ts": "2025-10-10"
+  },
+  {
+    "user": "user5@corp",
+    "type": "impossible_travel",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-10-06"
+  },
+  {
+    "user": "user6@corp",
+    "type": "impossible_travel",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-09-27"
+  },
+  {
+    "user": "user7@corp",
+    "type": "password_spray",
+    "details": "auto-detected pattern",
+    "severity": "High",
+    "ts": "2025-10-13"
+  },
+  {
+    "user": "user8@corp",
+    "type": "new_admin_grant",
+    "details": "auto-detected pattern",
+    "severity": "Low",
+    "ts": "2025-10-17"
+  },
+  {
+    "user": "user9@corp",
+    "type": "new_admin_grant",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-10-01"
+  },
+  {
+    "user": "user10@corp",
+    "type": "disabled_logging",
+    "details": "auto-detected pattern",
+    "severity": "High",
+    "ts": "2025-10-14"
+  },
+  {
+    "user": "user11@corp",
+    "type": "impossible_travel",
+    "details": "auto-detected pattern",
+    "severity": "High",
+    "ts": "2025-09-20"
+  },
+  {
+    "user": "user12@corp",
+    "type": "disabled_logging",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-09-29"
+  },
+  {
+    "user": "user13@corp",
+    "type": "disabled_logging",
+    "details": "auto-detected pattern",
+    "severity": "High",
+    "ts": "2025-10-09"
+  },
+  {
+    "user": "user14@corp",
+    "type": "new_admin_grant",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-10-14"
+  },
+  {
+    "user": "user15@corp",
+    "type": "password_spray",
+    "details": "auto-detected pattern",
+    "severity": "Low",
+    "ts": "2025-09-21"
+  },
+  {
+    "user": "user16@corp",
+    "type": "disabled_logging",
+    "details": "auto-detected pattern",
+    "severity": "High",
+    "ts": "2025-10-09"
+  },
+  {
+    "user": "user17@corp",
+    "type": "impossible_travel",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-10-11"
+  },
+  {
+    "user": "user18@corp",
+    "type": "suspicious_mfa",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-10-15"
+  },
+  {
+    "user": "user19@corp",
+    "type": "impossible_travel",
+    "details": "auto-detected pattern",
+    "severity": "High",
+    "ts": "2025-10-16"
+  },
+  {
+    "user": "user20@corp",
+    "type": "disabled_logging",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-09-20"
+  },
+  {
+    "user": "user21@corp",
+    "type": "password_spray",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-09-17"
+  },
+  {
+    "user": "user22@corp",
+    "type": "impossible_travel",
+    "details": "auto-detected pattern",
+    "severity": "Low",
+    "ts": "2025-09-27"
+  },
+  {
+    "user": "user23@corp",
+    "type": "password_spray",
+    "details": "auto-detected pattern",
+    "severity": "High",
+    "ts": "2025-09-25"
+  },
+  {
+    "user": "user24@corp",
+    "type": "impossible_travel",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-10-07"
+  },
+  {
+    "user": "user25@corp",
+    "type": "disabled_logging",
+    "details": "auto-detected pattern",
+    "severity": "High",
+    "ts": "2025-09-27"
+  },
+  {
+    "user": "user26@corp",
+    "type": "impossible_travel",
+    "details": "auto-detected pattern",
+    "severity": "Low",
+    "ts": "2025-10-01"
+  },
+  {
+    "user": "user27@corp",
+    "type": "password_spray",
+    "details": "auto-detected pattern",
+    "severity": "High",
+    "ts": "2025-10-03"
+  },
+  {
+    "user": "user28@corp",
+    "type": "suspicious_mfa",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-09-17"
+  },
+  {
+    "user": "user29@corp",
+    "type": "suspicious_mfa",
+    "details": "auto-detected pattern",
+    "severity": "Low",
+    "ts": "2025-10-10"
+  },
+  {
+    "user": "user30@corp",
+    "type": "suspicious_mfa",
+    "details": "auto-detected pattern",
+    "severity": "High",
+    "ts": "2025-09-17"
+  },
+  {
+    "user": "user31@corp",
+    "type": "new_admin_grant",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-10-16"
+  },
+  {
+    "user": "user32@corp",
+    "type": "disabled_logging",
+    "details": "auto-detected pattern",
+    "severity": "High",
+    "ts": "2025-09-21"
+  },
+  {
+    "user": "user33@corp",
+    "type": "impossible_travel",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-09-22"
+  },
+  {
+    "user": "user34@corp",
+    "type": "disabled_logging",
+    "details": "auto-detected pattern",
+    "severity": "Low",
+    "ts": "2025-09-24"
+  },
+  {
+    "user": "user35@corp",
+    "type": "password_spray",
+    "details": "auto-detected pattern",
+    "severity": "High",
+    "ts": "2025-10-14"
+  },
+  {
+    "user": "user36@corp",
+    "type": "suspicious_mfa",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-09-23"
+  },
+  {
+    "user": "user37@corp",
+    "type": "impossible_travel",
+    "details": "auto-detected pattern",
+    "severity": "High",
+    "ts": "2025-09-26"
+  },
+  {
+    "user": "user38@corp",
+    "type": "new_admin_grant",
+    "details": "auto-detected pattern",
+    "severity": "Low",
+    "ts": "2025-09-29"
+  },
+  {
+    "user": "user39@corp",
+    "type": "password_spray",
+    "details": "auto-detected pattern",
+    "severity": "Low",
+    "ts": "2025-10-14"
+  },
+  {
+    "user": "user40@corp",
+    "type": "password_spray",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-10-06"
+  },
+  {
+    "user": "user41@corp",
+    "type": "new_admin_grant",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-10-14"
+  },
+  {
+    "user": "user42@corp",
+    "type": "new_admin_grant",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-10-05"
+  },
+  {
+    "user": "user43@corp",
+    "type": "suspicious_mfa",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-10-10"
+  },
+  {
+    "user": "user44@corp",
+    "type": "suspicious_mfa",
+    "details": "auto-detected pattern",
+    "severity": "Low",
+    "ts": "2025-09-19"
+  },
+  {
+    "user": "user45@corp",
+    "type": "impossible_travel",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-09-25"
+  },
+  {
+    "user": "user46@corp",
+    "type": "suspicious_mfa",
+    "details": "auto-detected pattern",
+    "severity": "High",
+    "ts": "2025-10-12"
+  },
+  {
+    "user": "user47@corp",
+    "type": "suspicious_mfa",
+    "details": "auto-detected pattern",
+    "severity": "High",
+    "ts": "2025-09-18"
+  },
+  {
+    "user": "user48@corp",
+    "type": "disabled_logging",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-09-19"
+  },
+  {
+    "user": "user49@corp",
+    "type": "suspicious_mfa",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-09-17"
+  },
+  {
+    "user": "user50@corp",
+    "type": "impossible_travel",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-09-21"
+  },
+  {
+    "user": "user1@corp",
+    "type": "impossible_travel",
+    "details": "auto-detected pattern",
+    "severity": "Low",
+    "ts": "2025-10-15"
+  },
+  {
+    "user": "user2@corp",
+    "type": "password_spray",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-10-07"
+  },
+  {
+    "user": "user3@corp",
+    "type": "suspicious_mfa",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-10-14"
+  },
+  {
+    "user": "user4@corp",
+    "type": "new_admin_grant",
+    "details": "auto-detected pattern",
+    "severity": "High",
+    "ts": "2025-10-07"
+  },
+  {
+    "user": "user5@corp",
+    "type": "suspicious_mfa",
+    "details": "auto-detected pattern",
+    "severity": "Low",
+    "ts": "2025-10-16"
+  },
+  {
+    "user": "user6@corp",
+    "type": "suspicious_mfa",
+    "details": "auto-detected pattern",
+    "severity": "Low",
+    "ts": "2025-10-03"
+  },
+  {
+    "user": "user7@corp",
+    "type": "disabled_logging",
+    "details": "auto-detected pattern",
+    "severity": "High",
+    "ts": "2025-10-03"
+  },
+  {
+    "user": "user8@corp",
+    "type": "suspicious_mfa",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-10-04"
+  },
+  {
+    "user": "user9@corp",
+    "type": "password_spray",
+    "details": "auto-detected pattern",
+    "severity": "High",
+    "ts": "2025-10-13"
+  },
+  {
+    "user": "user10@corp",
+    "type": "impossible_travel",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-09-29"
+  },
+  {
+    "user": "user11@corp",
+    "type": "new_admin_grant",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-09-22"
+  },
+  {
+    "user": "user12@corp",
+    "type": "suspicious_mfa",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-10-02"
+  },
+  {
+    "user": "user13@corp",
+    "type": "impossible_travel",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-10-03"
+  },
+  {
+    "user": "user14@corp",
+    "type": "password_spray",
+    "details": "auto-detected pattern",
+    "severity": "High",
+    "ts": "2025-10-13"
+  },
+  {
+    "user": "user15@corp",
+    "type": "disabled_logging",
+    "details": "auto-detected pattern",
+    "severity": "High",
+    "ts": "2025-09-27"
+  },
+  {
+    "user": "user16@corp",
+    "type": "suspicious_mfa",
+    "details": "auto-detected pattern",
+    "severity": "Low",
+    "ts": "2025-10-02"
+  },
+  {
+    "user": "user17@corp",
+    "type": "new_admin_grant",
+    "details": "auto-detected pattern",
+    "severity": "High",
+    "ts": "2025-10-09"
+  },
+  {
+    "user": "user18@corp",
+    "type": "suspicious_mfa",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-10-04"
+  },
+  {
+    "user": "user19@corp",
+    "type": "new_admin_grant",
+    "details": "auto-detected pattern",
+    "severity": "High",
+    "ts": "2025-09-18"
+  },
+  {
+    "user": "user20@corp",
+    "type": "suspicious_mfa",
+    "details": "auto-detected pattern",
+    "severity": "High",
+    "ts": "2025-10-05"
+  },
+  {
+    "user": "user21@corp",
+    "type": "new_admin_grant",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-09-19"
+  },
+  {
+    "user": "user22@corp",
+    "type": "suspicious_mfa",
+    "details": "auto-detected pattern",
+    "severity": "High",
+    "ts": "2025-09-21"
+  },
+  {
+    "user": "user23@corp",
+    "type": "new_admin_grant",
+    "details": "auto-detected pattern",
+    "severity": "High",
+    "ts": "2025-09-27"
+  },
+  {
+    "user": "user24@corp",
+    "type": "impossible_travel",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-09-22"
+  },
+  {
+    "user": "user25@corp",
+    "type": "disabled_logging",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-10-01"
+  },
+  {
+    "user": "user26@corp",
+    "type": "suspicious_mfa",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-10-17"
+  },
+  {
+    "user": "user27@corp",
+    "type": "disabled_logging",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-10-12"
+  },
+  {
+    "user": "user28@corp",
+    "type": "new_admin_grant",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-10-16"
+  },
+  {
+    "user": "user29@corp",
+    "type": "password_spray",
+    "details": "auto-detected pattern",
+    "severity": "High",
+    "ts": "2025-10-09"
+  },
+  {
+    "user": "user30@corp",
+    "type": "disabled_logging",
+    "details": "auto-detected pattern",
+    "severity": "High",
+    "ts": "2025-10-13"
+  },
+  {
+    "user": "user31@corp",
+    "type": "suspicious_mfa",
+    "details": "auto-detected pattern",
+    "severity": "Low",
+    "ts": "2025-09-23"
+  },
+  {
+    "user": "user32@corp",
+    "type": "suspicious_mfa",
+    "details": "auto-detected pattern",
+    "severity": "Low",
+    "ts": "2025-10-12"
+  },
+  {
+    "user": "user33@corp",
+    "type": "suspicious_mfa",
+    "details": "auto-detected pattern",
+    "severity": "Low",
+    "ts": "2025-10-15"
+  },
+  {
+    "user": "user34@corp",
+    "type": "impossible_travel",
+    "details": "auto-detected pattern",
+    "severity": "Low",
+    "ts": "2025-09-24"
+  },
+  {
+    "user": "user35@corp",
+    "type": "password_spray",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-10-12"
+  },
+  {
+    "user": "user36@corp",
+    "type": "suspicious_mfa",
+    "details": "auto-detected pattern",
+    "severity": "High",
+    "ts": "2025-09-28"
+  },
+  {
+    "user": "user37@corp",
+    "type": "suspicious_mfa",
+    "details": "auto-detected pattern",
+    "severity": "Low",
+    "ts": "2025-10-08"
+  },
+  {
+    "user": "user38@corp",
+    "type": "suspicious_mfa",
+    "details": "auto-detected pattern",
+    "severity": "High",
+    "ts": "2025-10-15"
+  },
+  {
+    "user": "user39@corp",
+    "type": "disabled_logging",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-09-21"
+  },
+  {
+    "user": "user40@corp",
+    "type": "impossible_travel",
+    "details": "auto-detected pattern",
+    "severity": "Low",
+    "ts": "2025-09-22"
+  },
+  {
+    "user": "user41@corp",
+    "type": "new_admin_grant",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-10-08"
+  },
+  {
+    "user": "user42@corp",
+    "type": "password_spray",
+    "details": "auto-detected pattern",
+    "severity": "High",
+    "ts": "2025-10-17"
+  },
+  {
+    "user": "user43@corp",
+    "type": "password_spray",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-10-13"
+  },
+  {
+    "user": "user44@corp",
+    "type": "new_admin_grant",
+    "details": "auto-detected pattern",
+    "severity": "High",
+    "ts": "2025-10-12"
+  },
+  {
+    "user": "user45@corp",
+    "type": "disabled_logging",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-10-16"
+  },
+  {
+    "user": "user46@corp",
+    "type": "suspicious_mfa",
+    "details": "auto-detected pattern",
+    "severity": "Low",
+    "ts": "2025-10-06"
+  },
+  {
+    "user": "user47@corp",
+    "type": "disabled_logging",
+    "details": "auto-detected pattern",
+    "severity": "Low",
+    "ts": "2025-09-20"
+  },
+  {
+    "user": "user48@corp",
+    "type": "impossible_travel",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-10-01"
+  },
+  {
+    "user": "user49@corp",
+    "type": "password_spray",
+    "details": "auto-detected pattern",
+    "severity": "Low",
+    "ts": "2025-10-15"
+  },
+  {
+    "user": "user50@corp",
+    "type": "impossible_travel",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-09-25"
+  },
+  {
+    "user": "user1@corp",
+    "type": "suspicious_mfa",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-09-23"
+  },
+  {
+    "user": "user2@corp",
+    "type": "password_spray",
+    "details": "auto-detected pattern",
+    "severity": "Low",
+    "ts": "2025-09-23"
+  },
+  {
+    "user": "user3@corp",
+    "type": "impossible_travel",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-09-20"
+  },
+  {
+    "user": "user4@corp",
+    "type": "impossible_travel",
+    "details": "auto-detected pattern",
+    "severity": "Low",
+    "ts": "2025-10-02"
+  },
+  {
+    "user": "user5@corp",
+    "type": "password_spray",
+    "details": "auto-detected pattern",
+    "severity": "Low",
+    "ts": "2025-10-17"
+  },
+  {
+    "user": "user6@corp",
+    "type": "disabled_logging",
+    "details": "auto-detected pattern",
+    "severity": "Low",
+    "ts": "2025-10-13"
+  },
+  {
+    "user": "user7@corp",
+    "type": "impossible_travel",
+    "details": "auto-detected pattern",
+    "severity": "High",
+    "ts": "2025-09-17"
+  },
+  {
+    "user": "user8@corp",
+    "type": "impossible_travel",
+    "details": "auto-detected pattern",
+    "severity": "High",
+    "ts": "2025-09-28"
+  },
+  {
+    "user": "user9@corp",
+    "type": "suspicious_mfa",
+    "details": "auto-detected pattern",
+    "severity": "High",
+    "ts": "2025-10-14"
+  },
+  {
+    "user": "user10@corp",
+    "type": "new_admin_grant",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-09-30"
+  },
+  {
+    "user": "user11@corp",
+    "type": "impossible_travel",
+    "details": "auto-detected pattern",
+    "severity": "High",
+    "ts": "2025-10-14"
+  },
+  {
+    "user": "user12@corp",
+    "type": "suspicious_mfa",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-10-17"
+  },
+  {
+    "user": "user13@corp",
+    "type": "disabled_logging",
+    "details": "auto-detected pattern",
+    "severity": "Low",
+    "ts": "2025-09-29"
+  },
+  {
+    "user": "user14@corp",
+    "type": "password_spray",
+    "details": "auto-detected pattern",
+    "severity": "Low",
+    "ts": "2025-10-10"
+  },
+  {
+    "user": "user15@corp",
+    "type": "password_spray",
+    "details": "auto-detected pattern",
+    "severity": "High",
+    "ts": "2025-10-06"
+  },
+  {
+    "user": "user16@corp",
+    "type": "impossible_travel",
+    "details": "auto-detected pattern",
+    "severity": "Low",
+    "ts": "2025-10-12"
+  },
+  {
+    "user": "user17@corp",
+    "type": "impossible_travel",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-10-14"
+  },
+  {
+    "user": "user18@corp",
+    "type": "password_spray",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-09-29"
+  },
+  {
+    "user": "user19@corp",
+    "type": "disabled_logging",
+    "details": "auto-detected pattern",
+    "severity": "Medium",
+    "ts": "2025-10-14"
+  },
+  {
+    "user": "user20@corp",
+    "type": "impossible_travel",
+    "details": "auto-detected pattern",
+    "severity": "High",
+    "ts": "2025-10-05"
+  }
+]
