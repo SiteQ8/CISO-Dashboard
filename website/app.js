@@ -164,10 +164,12 @@ document.addEventListener('DOMContentLoaded', ()=>{
       if(isMobile){
         const open=n.classList.toggle('open');
         n.classList.remove('collapsed');
+        document.body.classList.toggle('menu-open', open);
         menuBtn().setAttribute('aria-expanded', String(open));
       }else{
         const collapsed=n.classList.toggle('collapsed');
         n.classList.remove('open');
+        document.body.classList.remove('menu-open');
         menuBtn().setAttribute('aria-expanded', String(!collapsed));
       }
     });
@@ -178,6 +180,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     const n=navEl();
     if(n.classList.contains('open')){
       n.classList.remove('open');
+      document.body.classList.remove('menu-open');
       menuBtn() && menuBtn().setAttribute('aria-expanded','false');
     }
   }));
@@ -185,7 +188,8 @@ document.addEventListener('DOMContentLoaded', ()=>{
   // Reset incompatible states on resize
   window.addEventListener('resize', throttle(()=>{
     const n=navEl(); const isMobile=window.innerWidth<=900;
-    if(isMobile){ n.classList.remove('collapsed'); } else { n.classList.remove('open'); }
+    if(isMobile){ n.classList.remove('collapsed'); }
+    else { n.classList.remove('open'); document.body.classList.remove('menu-open'); }
     redraw();
   },200));
 
