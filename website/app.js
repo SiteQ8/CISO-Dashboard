@@ -1,9 +1,11 @@
 
-let MODE = 'live'; // 'live' tries API first, then local demo json
+let MODE = typeof MODE !== 'undefined' ? MODE : 'live';
 const API_BASE = 'http://localhost:8000';
 const DEMO_BASE = 'data';
 
 const modeBtn = () => document.getElementById('modeBtn');
+const menuBtn = () => document.getElementById('menuBtn');
+const navEl = () => document.querySelector('nav');
 
 function setMode(m){
   MODE = m;
@@ -35,12 +37,10 @@ async function getData(path, demoName){
   if(MODE === 'live'){
     const live = await fetchJSONLive(path);
     if(live) return live;
-    // fallback to demo if live fails
     return await fetchJSONDemo(demoName);
   }else{
     const demo = await fetchJSONDemo(demoName);
     if(demo) return demo;
-    // try live as a backup
     return await fetchJSONLive(path);
   }
 }
@@ -91,6 +91,8 @@ function fillTable(id, rows){
   });
 }
 
+let _incData = null;
+
 async function render(){
   const k = await getData('/kpis', 'kpis');
   if(k){
@@ -104,6 +106,7 @@ async function render(){
 
   const inc = await getData('/incidents', 'incidents');
   if(inc){
+    _incData = inc;
     const pts = inc.map(d=>({x:d.date, y:+d.incidents}));
     drawLine(document.getElementById('incChart'), pts);
     const legend = document.getElementById('incLegend');
@@ -153,6 +156,22 @@ async function render(){
   }
 }
 
+function throttle(fn, wait){
+  let last = 0;
+  return (...args)=>{
+    const now = Date.now();
+    if(now - last > wait){ last = now; fn(...args); }
+  };
+}
+
+function redraw(){
+  const inc = _incData;
+  if(inc){
+    const pts = inc.map(d=>({x:d.date, y:+d.incidents}));
+    drawLine(document.getElementById('incChart'), pts);
+  }
+}
+
 document.addEventListener('DOMContentLoaded', ()=>{
   setMode('live');
   if(modeBtn()){
@@ -161,5 +180,13 @@ document.addEventListener('DOMContentLoaded', ()=>{
       render();
     });
   }
+  if(menuBtn()){
+    menuBtn().addEventListener('click', ()=>{
+      const n = navEl();
+      const open = n.classList.toggle('open');
+      menuBtn().setAttribute('aria-expanded', String(open));
+    });
+  }
+  window.addEventListener('resize', throttle(redraw, 200));
   render();
 });
