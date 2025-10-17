@@ -1,0 +1,422 @@
+[
+  {
+    "provider": "Azure",
+    "service": "RDS/SQL",
+    "finding": "Unencrypted volume",
+    "severity": "Critical",
+    "count": "6"
+  },
+  {
+    "provider": "GCP",
+    "service": "EC2/VM",
+    "finding": "Key rotation overdue",
+    "severity": "Critical",
+    "count": "1"
+  },
+  {
+    "provider": "GCP",
+    "service": "IAM",
+    "finding": "Key rotation overdue",
+    "severity": "Medium",
+    "count": "26"
+  },
+  {
+    "provider": "AWS",
+    "service": "KMS",
+    "finding": "Unencrypted volume",
+    "severity": "Low",
+    "count": "25"
+  },
+  {
+    "provider": "AWS",
+    "service": "IAM",
+    "finding": "Over-permissive role",
+    "severity": "Low",
+    "count": "21"
+  },
+  {
+    "provider": "AWS",
+    "service": "EC2/VM",
+    "finding": "Public bucket",
+    "severity": "Medium",
+    "count": "11"
+  },
+  {
+    "provider": "Azure",
+    "service": "KeyVault/Secrets",
+    "finding": "Open SG",
+    "severity": "High",
+    "count": "10"
+  },
+  {
+    "provider": "Azure",
+    "service": "EC2/VM",
+    "finding": "Unencrypted volume",
+    "severity": "Medium",
+    "count": "18"
+  },
+  {
+    "provider": "AWS",
+    "service": "KeyVault/Secrets",
+    "finding": "No MFA on root",
+    "severity": "Medium",
+    "count": "12"
+  },
+  {
+    "provider": "Azure",
+    "service": "RDS/SQL",
+    "finding": "No MFA on root",
+    "severity": "Medium",
+    "count": "28"
+  },
+  {
+    "provider": "GCP",
+    "service": "EC2/VM",
+    "finding": "Over-permissive role",
+    "severity": "Low",
+    "count": "26"
+  },
+  {
+    "provider": "AWS",
+    "service": "EC2/VM",
+    "finding": "Over-permissive role",
+    "severity": "Medium",
+    "count": "23"
+  },
+  {
+    "provider": "Azure",
+    "service": "S3/Blob",
+    "finding": "Open SG",
+    "severity": "Critical",
+    "count": "26"
+  },
+  {
+    "provider": "AWS",
+    "service": "RDS/SQL",
+    "finding": "Key rotation overdue",
+    "severity": "Low",
+    "count": "18"
+  },
+  {
+    "provider": "GCP",
+    "service": "IAM",
+    "finding": "Unencrypted volume",
+    "severity": "Medium",
+    "count": "4"
+  },
+  {
+    "provider": "AWS",
+    "service": "IAM",
+    "finding": "Over-permissive role",
+    "severity": "Low",
+    "count": "20"
+  },
+  {
+    "provider": "GCP",
+    "service": "IAM",
+    "finding": "Open SG",
+    "severity": "Low",
+    "count": "20"
+  },
+  {
+    "provider": "AWS",
+    "service": "VPC/Network",
+    "finding": "Key rotation overdue",
+    "severity": "Critical",
+    "count": "7"
+  },
+  {
+    "provider": "AWS",
+    "service": "VPC/Network",
+    "finding": "Key rotation overdue",
+    "severity": "Low",
+    "count": "21"
+  },
+  {
+    "provider": "AWS",
+    "service": "IAM",
+    "finding": "Key rotation overdue",
+    "severity": "High",
+    "count": "28"
+  },
+  {
+    "provider": "AWS",
+    "service": "RDS/SQL",
+    "finding": "Public bucket",
+    "severity": "Critical",
+    "count": "12"
+  },
+  {
+    "provider": "AWS",
+    "service": "KeyVault/Secrets",
+    "finding": "No MFA on root",
+    "severity": "Medium",
+    "count": "28"
+  },
+  {
+    "provider": "Azure",
+    "service": "S3/Blob",
+    "finding": "Unencrypted volume",
+    "severity": "Critical",
+    "count": "11"
+  },
+  {
+    "provider": "AWS",
+    "service": "RDS/SQL",
+    "finding": "Open SG",
+    "severity": "Critical",
+    "count": "16"
+  },
+  {
+    "provider": "GCP",
+    "service": "KMS",
+    "finding": "Public bucket",
+    "severity": "Critical",
+    "count": "25"
+  },
+  {
+    "provider": "Azure",
+    "service": "KMS",
+    "finding": "Key rotation overdue",
+    "severity": "Low",
+    "count": "15"
+  },
+  {
+    "provider": "AWS",
+    "service": "IAM",
+    "finding": "Key rotation overdue",
+    "severity": "Low",
+    "count": "20"
+  },
+  {
+    "provider": "GCP",
+    "service": "VPC/Network",
+    "finding": "Over-permissive role",
+    "severity": "Low",
+    "count": "25"
+  },
+  {
+    "provider": "Azure",
+    "service": "KMS",
+    "finding": "Public bucket",
+    "severity": "Critical",
+    "count": "21"
+  },
+  {
+    "provider": "Azure",
+    "service": "S3/Blob",
+    "finding": "Over-permissive role",
+    "severity": "Critical",
+    "count": "14"
+  },
+  {
+    "provider": "AWS",
+    "service": "IAM",
+    "finding": "Key rotation overdue",
+    "severity": "Critical",
+    "count": "28"
+  },
+  {
+    "provider": "AWS",
+    "service": "S3/Blob",
+    "finding": "Public bucket",
+    "severity": "High",
+    "count": "16"
+  },
+  {
+    "provider": "AWS",
+    "service": "EC2/VM",
+    "finding": "Key rotation overdue",
+    "severity": "High",
+    "count": "15"
+  },
+  {
+    "provider": "GCP",
+    "service": "VPC/Network",
+    "finding": "Over-permissive role",
+    "severity": "Critical",
+    "count": "12"
+  },
+  {
+    "provider": "GCP",
+    "service": "VPC/Network",
+    "finding": "Key rotation overdue",
+    "severity": "High",
+    "count": "24"
+  },
+  {
+    "provider": "AWS",
+    "service": "EC2/VM",
+    "finding": "Key rotation overdue",
+    "severity": "Low",
+    "count": "15"
+  },
+  {
+    "provider": "GCP",
+    "service": "EC2/VM",
+    "finding": "Public bucket",
+    "severity": "Critical",
+    "count": "1"
+  },
+  {
+    "provider": "AWS",
+    "service": "IAM",
+    "finding": "Key rotation overdue",
+    "severity": "Critical",
+    "count": "13"
+  },
+  {
+    "provider": "Azure",
+    "service": "EC2/VM",
+    "finding": "Key rotation overdue",
+    "severity": "High",
+    "count": "28"
+  },
+  {
+    "provider": "Azure",
+    "service": "KMS",
+    "finding": "Public bucket",
+    "severity": "Medium",
+    "count": "12"
+  },
+  {
+    "provider": "GCP",
+    "service": "VPC/Network",
+    "finding": "Unencrypted volume",
+    "severity": "Low",
+    "count": "22"
+  },
+  {
+    "provider": "AWS",
+    "service": "S3/Blob",
+    "finding": "Public bucket",
+    "severity": "Medium",
+    "count": "21"
+  },
+  {
+    "provider": "AWS",
+    "service": "VPC/Network",
+    "finding": "Unencrypted volume",
+    "severity": "Low",
+    "count": "13"
+  },
+  {
+    "provider": "Azure",
+    "service": "EC2/VM",
+    "finding": "Open SG",
+    "severity": "Medium",
+    "count": "10"
+  },
+  {
+    "provider": "Azure",
+    "service": "IAM",
+    "finding": "Open SG",
+    "severity": "Medium",
+    "count": "28"
+  },
+  {
+    "provider": "GCP",
+    "service": "VPC/Network",
+    "finding": "Public bucket",
+    "severity": "High",
+    "count": "20"
+  },
+  {
+    "provider": "Azure",
+    "service": "KMS",
+    "finding": "Unencrypted volume",
+    "severity": "High",
+    "count": "13"
+  },
+  {
+    "provider": "Azure",
+    "service": "VPC/Network",
+    "finding": "Unencrypted volume",
+    "severity": "High",
+    "count": "26"
+  },
+  {
+    "provider": "Azure",
+    "service": "EC2/VM",
+    "finding": "Key rotation overdue",
+    "severity": "Critical",
+    "count": "11"
+  },
+  {
+    "provider": "Azure",
+    "service": "EC2/VM",
+    "finding": "Unencrypted volume",
+    "severity": "High",
+    "count": "19"
+  },
+  {
+    "provider": "AWS",
+    "service": "EC2/VM",
+    "finding": "Over-permissive role",
+    "severity": "High",
+    "count": "9"
+  },
+  {
+    "provider": "GCP",
+    "service": "VPC/Network",
+    "finding": "Unencrypted volume",
+    "severity": "Medium",
+    "count": "18"
+  },
+  {
+    "provider": "AWS",
+    "service": "KMS",
+    "finding": "Open SG",
+    "severity": "Low",
+    "count": "26"
+  },
+  {
+    "provider": "Azure",
+    "service": "S3/Blob",
+    "finding": "Key rotation overdue",
+    "severity": "High",
+    "count": "10"
+  },
+  {
+    "provider": "GCP",
+    "service": "IAM",
+    "finding": "Key rotation overdue",
+    "severity": "Low",
+    "count": "15"
+  },
+  {
+    "provider": "GCP",
+    "service": "S3/Blob",
+    "finding": "No MFA on root",
+    "severity": "Critical",
+    "count": "26"
+  },
+  {
+    "provider": "Azure",
+    "service": "RDS/SQL",
+    "finding": "Open SG",
+    "severity": "Critical",
+    "count": "18"
+  },
+  {
+    "provider": "Azure",
+    "service": "KeyVault/Secrets",
+    "finding": "Public bucket",
+    "severity": "High",
+    "count": "13"
+  },
+  {
+    "provider": "GCP",
+    "service": "KMS",
+    "finding": "No MFA on root",
+    "severity": "Medium",
+    "count": "16"
+  },
+  {
+    "provider": "GCP",
+    "service": "KMS",
+    "finding": "Over-permissive role",
+    "severity": "High",
+    "count": "7"
+  }
+]

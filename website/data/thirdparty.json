@@ -1,0 +1,58 @@
+[
+  {
+    "vendor": "CloudCo",
+    "tier": "Tier 3",
+    "risk_score": "0.29",
+    "issues_open": "3",
+    "sla_breaches": "1",
+    "last_assessed": "2025-07-05"
+  },
+  {
+    "vendor": "PaymentsPlus",
+    "tier": "Tier 2",
+    "risk_score": "0.43",
+    "issues_open": "2",
+    "sla_breaches": "1",
+    "last_assessed": "2025-06-19"
+  },
+  {
+    "vendor": "IDP Corp",
+    "tier": "Tier 2",
+    "risk_score": "0.71",
+    "issues_open": "2",
+    "sla_breaches": "4",
+    "last_assessed": "2025-06-20"
+  },
+  {
+    "vendor": "EmailWorks",
+    "tier": "Tier 3",
+    "risk_score": "0.6",
+    "issues_open": "12",
+    "sla_breaches": "0",
+    "last_assessed": "2025-07-19"
+  },
+  {
+    "vendor": "Ticketly",
+    "tier": "Tier 3",
+    "risk_score": "0.71",
+    "issues_open": "13",
+    "sla_breaches": "2",
+    "last_assessed": "2025-09-17"
+  },
+  {
+    "vendor": "DataLakeX",
+    "tier": "Tier 2",
+    "risk_score": "0.65",
+    "issues_open": "8",
+    "sla_breaches": "0",
+    "last_assessed": "2025-07-10"
+  },
+  {
+    "vendor": "NetGuard",
+    "tier": "Tier 2",
+    "risk_score": "0.64",
+    "issues_open": "1",
+    "sla_breaches": "4",
+    "last_assessed": "2025-09-27"
+  }
+]

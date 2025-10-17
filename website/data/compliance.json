@@ -1,0 +1,87 @@
+[
+  {
+    "framework": "CIS v8.1",
+    "domain": "Inventory",
+    "score": "0.58"
+  },
+  {
+    "framework": "CIS v8.1",
+    "domain": "Vuln Mgmt",
+    "score": "0.57"
+  },
+  {
+    "framework": "CIS v8.1",
+    "domain": "Secure Config",
+    "score": "0.52"
+  },
+  {
+    "framework": "CIS v8.1",
+    "domain": "Admin Priv",
+    "score": "0.7"
+  },
+  {
+    "framework": "CIS v8.1",
+    "domain": "Logging",
+    "score": "0.48"
+  },
+  {
+    "framework": "CIS v8.1",
+    "domain": "Email/Web Sec",
+    "score": "0.68"
+  },
+  {
+    "framework": "NIST CSF 2.0",
+    "domain": "Identify",
+    "score": "0.52"
+  },
+  {
+    "framework": "NIST CSF 2.0",
+    "domain": "Protect",
+    "score": "0.7"
+  },
+  {
+    "framework": "NIST CSF 2.0",
+    "domain": "Detect",
+    "score": "0.7"
+  },
+  {
+    "framework": "NIST CSF 2.0",
+    "domain": "Respond",
+    "score": "0.72"
+  },
+  {
+    "framework": "NIST CSF 2.0",
+    "domain": "Recover",
+    "score": "0.88"
+  },
+  {
+    "framework": "PCI DSS 4.0",
+    "domain": "Build & Maintain",
+    "score": "0.45"
+  },
+  {
+    "framework": "PCI DSS 4.0",
+    "domain": "Protect Data",
+    "score": "0.87"
+  },
+  {
+    "framework": "PCI DSS 4.0",
+    "domain": "Vuln Mgmt",
+    "score": "0.68"
+  },
+  {
+    "framework": "PCI DSS 4.0",
+    "domain": "Strong Access",
+    "score": "0.73"
+  },
+  {
+    "framework": "PCI DSS 4.0",
+    "domain": "Monitor & Test",
+    "score": "0.78"
+  },
+  {
+    "framework": "PCI DSS 4.0",
+    "domain": "Maintain Policy",
+    "score": "0.87"
+  }
+]

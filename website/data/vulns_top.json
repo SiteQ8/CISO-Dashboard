@@ -1,0 +1,110 @@
+[
+  {
+    "asset_id": "A002",
+    "cve": "CVE-2024-0001",
+    "cvss": "5.9",
+    "exploitable": "True",
+    "age_days": "167",
+    "owner": "Team 2",
+    "status": "open"
+  },
+  {
+    "asset_id": "A003",
+    "cve": "CVE-2024-0002",
+    "cvss": "4.4",
+    "exploitable": "False",
+    "age_days": "94",
+    "owner": "Team 3",
+    "status": "open"
+  },
+  {
+    "asset_id": "A004",
+    "cve": "CVE-2024-0003",
+    "cvss": "9.5",
+    "exploitable": "True",
+    "age_days": "23",
+    "owner": "Team 4",
+    "status": "patched"
+  },
+  {
+    "asset_id": "A005",
+    "cve": "CVE-2024-0004",
+    "cvss": "6.5",
+    "exploitable": "True",
+    "age_days": "142",
+    "owner": "Team 5",
+    "status": "patched"
+  },
+  {
+    "asset_id": "A006",
+    "cve": "CVE-2024-0005",
+    "cvss": "4.4",
+    "exploitable": "False",
+    "age_days": "58",
+    "owner": "Team 6",
+    "status": "open"
+  },
+  {
+    "asset_id": "A007",
+    "cve": "CVE-2024-0006",
+    "cvss": "7.5",
+    "exploitable": "False",
+    "age_days": "57",
+    "owner": "Team 1",
+    "status": "open"
+  },
+  {
+    "asset_id": "A008",
+    "cve": "CVE-2024-0007",
+    "cvss": "7.3",
+    "exploitable": "True",
+    "age_days": "108",
+    "owner": "Team 2",
+    "status": "in-progress"
+  },
+  {
+    "asset_id": "A009",
+    "cve": "CVE-2024-0008",
+    "cvss": "7.2",
+    "exploitable": "False",
+    "age_days": "144",
+    "owner": "Team 3",
+    "status": "in-progress"
+  },
+  {
+    "asset_id": "A010",
+    "cve": "CVE-2024-0009",
+    "cvss": "4.6",
+    "exploitable": "False",
+    "age_days": "49",
+    "owner": "Team 4",
+    "status": "accepted"
+  },
+  {
+    "asset_id": "A011",
+    "cve": "CVE-2024-0010",
+    "cvss": "4.6",
+    "exploitable": "False",
+    "age_days": "145",
+    "owner": "Team 5",
+    "status": "open"
+  },
+  {
+    "asset_id": "A012",
+    "cve": "CVE-2024-0011",
+    "cvss": "7.7",
+    "exploitable": "False",
+    "age_days": "137",
+    "owner": "Team 6",
+    "status": "patched"
+  },
+  {
+    "asset_id": "A013",
+    "cve": "CVE-2024-0012",
+    "cvss": "8.7",
+    "exploitable": "False",
+    "age_days": "117",
+    "owner": "Team 1",
+    "status": "accepted"
+  }
+]
