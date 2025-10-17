@@ -1,11 +1,10 @@
-
-let MODE = typeof MODE !== 'undefined' ? MODE : 'live';
+let MODE = 'live'; // 'live' tries API first, then local demo json
 const API_BASE = 'http://localhost:8000';
 const DEMO_BASE = 'data';
 
+const navEl = () => document.getElementById('nav');
 const modeBtn = () => document.getElementById('modeBtn');
 const menuBtn = () => document.getElementById('menuBtn');
-const navEl = () => document.querySelector('nav');
 
 function setMode(m){
   MODE = m;
@@ -172,7 +171,9 @@ function redraw(){
   }
 }
 
+
 document.addEventListener('DOMContentLoaded', ()=>{
+  // mode toggle
   setMode('live');
   if(modeBtn()){
     modeBtn().addEventListener('click', ()=>{
@@ -180,6 +181,43 @@ document.addEventListener('DOMContentLoaded', ()=>{
       render();
     });
   }
+
+  // menu toggle works on both desktop & mobile
+  if(menuBtn()){
+    menuBtn().addEventListener('click', ()=>{
+      const n = navEl();
+      const isMobile = window.matchMedia('(max-width: 820px)').matches;
+      if(isMobile){
+        const open = n.classList.toggle('open');
+        n.classList.remove('collapsed'); // ignore desktop state on mobile
+        menuBtn().setAttribute('aria-expanded', String(open));
+      }else{
+        const collapsed = n.classList.toggle('collapsed');
+        n.classList.remove('open'); // ignore mobile state on desktop
+        menuBtn().setAttribute('aria-expanded', String(!collapsed));
+      }
+    });
+  }
+
+  // On resize: remove mobile 'open' state when moving to desktop to prevent stuck overlay
+  window.addEventListener('resize', throttle(()=>{
+    const n = navEl();
+    const isMobile = window.matchMedia('(max-width: 820px)').matches;
+    if(!isMobile){
+      n.classList.remove('open'); // close mobile dropdown when leaving mobile
+      // keep user's collapsed preference on desktop
+    } else {
+      n.classList.remove('collapsed'); // ignore desktop collapse on mobile
+    }
+    redraw();
+  }, 200));
+
+  render();
+});
+
+  }
+
+  // menu toggle
   if(menuBtn()){
     menuBtn().addEventListener('click', ()=>{
       const n = navEl();
@@ -187,6 +225,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
       menuBtn().setAttribute('aria-expanded', String(open));
     });
   }
+
   window.addEventListener('resize', throttle(redraw, 200));
   render();
 });
