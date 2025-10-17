@@ -1,9 +1,10 @@
-
 let MODE = 'live'; // 'live' tries API first, then local demo json
 const API_BASE = 'http://localhost:8000';
 const DEMO_BASE = 'data';
 
+const navEl = () => document.getElementById('nav');
 const modeBtn = () => document.getElementById('modeBtn');
+const menuBtn = () => document.getElementById('menuBtn');
 
 function setMode(m){
   MODE = m;
@@ -35,12 +36,10 @@ async function getData(path, demoName){
   if(MODE === 'live'){
     const live = await fetchJSONLive(path);
     if(live) return live;
-    // fallback to demo if live fails
     return await fetchJSONDemo(demoName);
   }else{
     const demo = await fetchJSONDemo(demoName);
     if(demo) return demo;
-    // try live as a backup
     return await fetchJSONLive(path);
   }
 }
@@ -91,6 +90,8 @@ function fillTable(id, rows){
   });
 }
 
+let _incData = null;
+
 async function render(){
   const k = await getData('/kpis', 'kpis');
   if(k){
@@ -104,6 +105,7 @@ async function render(){
 
   const inc = await getData('/incidents', 'incidents');
   if(inc){
+    _incData = inc;
     const pts = inc.map(d=>({x:d.date, y:+d.incidents}));
     drawLine(document.getElementById('incChart'), pts);
     const legend = document.getElementById('incLegend');
@@ -153,7 +155,25 @@ async function render(){
   }
 }
 
+function throttle(fn, wait){
+  let last = 0;
+  return (...args)=>{
+    const now = Date.now();
+    if(now - last > wait){ last = now; fn(...args); }
+  };
+}
+
+function redraw(){
+  const inc = _incData;
+  if(inc){
+    const pts = inc.map(d=>({x:d.date, y:+d.incidents}));
+    drawLine(document.getElementById('incChart'), pts);
+  }
+}
+
+
 document.addEventListener('DOMContentLoaded', ()=>{
+  // mode toggle
   setMode('live');
   if(modeBtn()){
     modeBtn().addEventListener('click', ()=>{
@@ -161,5 +181,51 @@ document.addEventListener('DOMContentLoaded', ()=>{
       render();
     });
   }
+
+  // menu toggle works on both desktop & mobile
+  if(menuBtn()){
+    menuBtn().addEventListener('click', ()=>{
+      const n = navEl();
+      const isMobile = window.matchMedia('(max-width: 820px)').matches;
+      if(isMobile){
+        const open = n.classList.toggle('open');
+        n.classList.remove('collapsed'); // ignore desktop state on mobile
+        menuBtn().setAttribute('aria-expanded', String(open));
+      }else{
+        const collapsed = n.classList.toggle('collapsed');
+        n.classList.remove('open'); // ignore mobile state on desktop
+        menuBtn().setAttribute('aria-expanded', String(!collapsed));
+      }
+    });
+  }
+
+  // On resize: remove mobile 'open' state when moving to desktop to prevent stuck overlay
+  window.addEventListener('resize', throttle(()=>{
+    const n = navEl();
+    const isMobile = window.matchMedia('(max-width: 820px)').matches;
+    if(!isMobile){
+      n.classList.remove('open'); // close mobile dropdown when leaving mobile
+      // keep user's collapsed preference on desktop
+    } else {
+      n.classList.remove('collapsed'); // ignore desktop collapse on mobile
+    }
+    redraw();
+  }, 200));
+
+  render();
+});
+
+  }
+
+  // menu toggle
+  if(menuBtn()){
+    menuBtn().addEventListener('click', ()=>{
+      const n = navEl();
+      const open = n.classList.toggle('open');
+      menuBtn().setAttribute('aria-expanded', String(open));
+    });
+  }
+
+  window.addEventListener('resize', throttle(redraw, 200));
   render();
 });
