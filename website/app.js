@@ -1,5 +1,10 @@
 // Persist data source mode; update labels
 let MODE = localStorage.getItem('mode') || 'live';
+// Force demo on GitHub Pages (no localhost API there)
+if (typeof window !== 'undefined' && /github\.io$/i.test(location.hostname)) {
+  MODE = 'demo';
+  localStorage.setItem('mode', 'demo');
+}
 const API_BASE = 'http://localhost:8000';
 const DEMO_BASE = 'data';
 
