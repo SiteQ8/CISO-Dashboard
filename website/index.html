@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>CISO Dashboard • SiteQ8</title>
-  <link rel="stylesheet" href="style.css?v=20251017">
+  <link rel="stylesheet" href="style.css?v=20251018">
 </head>
 <body>
   <header>
@@ -21,6 +21,7 @@
       <button id="modeBtn" class="mode" title="Toggle data source" type="button">Live API</button>
       <span id="modeStatus" class="status-pill" aria-live="polite">Live</span>
 
+      <!-- Desktop links live inline; on mobile this becomes a fixed sheet below header -->
       <div id="navLinks" class="links">
         <a href="#kpis">KPIs</a>
         <a href="#incidents">Incidents</a>
@@ -115,6 +116,6 @@
   </footer>
 
   <div id="toast" role="status" aria-live="polite"></div>
-  <script src="app.js?v=20251017" defer></script>
+  <script src="app.js?v=20251018" defer></script>
 </body>
 </html>
