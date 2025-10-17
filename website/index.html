@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>CISO Dashboard • SiteQ8</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=20251017">
 </head>
 <body>
   <header>
@@ -20,12 +20,13 @@
       <button id="menuBtn" class="icon-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">☰</button>
       <button id="modeBtn" class="mode" title="Toggle data source" type="button">Live API</button>
       <span id="modeStatus" class="status-pill" aria-live="polite">Live</span>
+
       <div id="navLinks" class="links">
         <a href="#kpis">KPIs</a>
         <a href="#incidents">Incidents</a>
-        <a href="#vulns">Vulns</a>
+        <a href="#vulns">Vulnerabilities</a>
         <a href="#compliance">Compliance</a>
-        <a href="#thirdparty">3rd Party</a>
+        <a href="#thirdparty">Third-Party</a>
         <a href="#risk">Risk</a>
       </div>
     </nav>
@@ -42,16 +43,21 @@
     </section>
 
     <section id="incidents">
-      <h2>Incidents (90 days)</h2>
+      <h2>Incidents (90 Days)</h2>
       <canvas id="incChart"></canvas>
-      <div class="legend" id="incLegend"></div>
+      <div id="incLegend" class="legend"></div>
     </section>
 
     <section id="vulns">
       <h2>Top Vulnerabilities</h2>
       <div class="table-wrap">
         <table id="vulnTable">
-          <thead><tr><th>Asset</th><th>CVE</th><th>CVSS</th><th>Exploit</th><th>Age(d)</th><th>Owner</th><th>Status</th><th>Risk</th></tr></thead>
+          <thead>
+            <tr>
+              <th>Asset</th><th>CVE</th><th>CVSS</th><th>Exploit</th>
+              <th>Age (days)</th><th>Owner</th><th>Status</th><th>Risk</th>
+            </tr>
+          </thead>
           <tbody></tbody>
         </table>
       </div>
@@ -73,7 +79,9 @@
         <h2>Third-Party Risk</h2>
         <div class="table-wrap">
           <table id="tpTable">
-            <thead><tr><th>Vendor</th><th>Tier</th><th>Risk</th><th>Open Issues</th><th>SLA Breaches</th><th>Last Assessed</th></tr></thead>
+            <thead>
+              <tr><th>Vendor</th><th>Tier</th><th>Risk</th><th>Open Issues</th><th>SLA Breaches</th><th>Assessed</th></tr>
+            </thead>
             <tbody></tbody>
           </table>
         </div>
@@ -93,7 +101,9 @@
       <h2>Risk Register (Top 10)</h2>
       <div class="table-wrap">
         <table id="riskTable">
-          <thead><tr><th>ID</th><th>Title</th><th>Owner</th><th>Likelihood</th><th>Impact</th><th>Score</th><th>Status</th><th>Target Date</th></tr></thead>
+          <thead>
+            <tr><th>ID</th><th>Title</th><th>Owner</th><th>Likelihood</th><th>Impact</th><th>Score</th><th>Status</th><th>Target Date</th></tr>
+          </thead>
           <tbody></tbody>
         </table>
       </div>
@@ -105,6 +115,6 @@
   </footer>
 
   <div id="toast" role="status" aria-live="polite"></div>
-  <script src="app.js"></script>
+  <script src="app.js?v=20251017" defer></script>
 </body>
 </html>
