@@ -5,7 +5,10 @@
   --radius:16px; --space:clamp(12px,2vw,20px);
   --fs-hero:clamp(20px,3.2vw,28px); --fs-h2:clamp(16px,2.4vw,20px);
   --fs-body:clamp(13px,1.7vw,15px);
+  --header-h:72px; /* desktop default */
 }
+
+@media(max-width:900px){ :root{ --header-h:64px; } }
 
 *{box-sizing:border-box}
 html,body{height:100%}
@@ -15,13 +18,16 @@ body{
   margin:0; color:var(--text); background:var(--bg); font-size:var(--fs-body); line-height:1.5;
   -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
   -webkit-tap-highlight-color:transparent;
+  padding-top:0; /* header is sticky, so no extra offset */
 }
+body.menu-open{ overflow:hidden; }
 
 /* Header / Nav */
 header{
   display:flex;align-items:center;justify-content:space-between;
   padding:var(--space); border-bottom:1px solid var(--border);
-  position:sticky; top:0; background:var(--bg); z-index:20;
+  position:sticky; top:0; background:var(--bg); z-index:1000;
+  min-height:var(--header-h);
 }
 .brand{display:flex;gap:12px;align-items:center}
 .logo{font-size:28px}
@@ -29,7 +35,7 @@ h1{margin:0;color:#f3f4f6;font-size:var(--fs-hero);letter-spacing:.2px}
 .tag{color:#93c5fd;margin:2px 0 0 0;font-size:12px}
 
 /* NAV */
-#nav{display:flex;align-items:center;gap:10px;flex-wrap:nowrap;position:relative}
+#nav{display:flex;align-items:center;gap:10px;flex-wrap:nowrap;position:relative;z-index:1001}
 #nav .mode{min-width:112px;height:44px}
 #nav .links{display:flex;gap:10px;flex-wrap:wrap}
 #nav a,#nav button{
@@ -44,14 +50,24 @@ h1{margin:0;color:#f3f4f6;font-size:var(--fs-hero);letter-spacing:.2px}
 /* Desktop collapse (burger can hide links if desired) */
 #nav.collapsed .links{display:none}
 
-/* Mobile dropdown (<=900px) */
+/* Mobile dropdown (<=900px) — fixed sheet right below header */
 @media(max-width:900px){
-  #nav{align-items:flex-start}
-  #nav .links{
-    display:none; width:100%; margin-top:10px; padding:10px; background:var(--panel);
-    border:1px solid var(--border); border-radius:12px; flex-direction:column;
+  #nav{align-items:center}
+  /* Hide inline links on mobile */
+  #nav .links{ display:none; }
+
+  /* Show as fixed sheet when open */
+  #nav.open .links{
+    display:flex; flex-direction:column;
+    position:fixed; left:0; right:0; top:var(--header-h);
+    background:var(--panel); border-top:1px solid var(--border); border-bottom:1px solid var(--border);
+    padding:12px; gap:8px; z-index:999; box-shadow:0 12px 32px rgba(0,0,0,.35);
   }
-  #nav.open .links{display:flex}
+
+  /* Make links full width for easy tapping */
+  #nav.open .links a{
+    width:100%; justify-content:center;
+  }
 }
 
 main{padding:var(--space); max-width:1200px; margin:0 auto}
@@ -94,7 +110,7 @@ tr:hover td{background:var(--panel-2)}
   position:fixed; left:50%; transform:translateX(-50%); bottom:18px;
   background:var(--panel); color:var(--text); border:1px solid var(--border);
   border-radius:10px; padding:10px 14px; opacity:0; pointer-events:none;
-  transition:opacity .25s ease, bottom .25s ease; z-index:50;
+  transition:opacity .25s ease, bottom .25s ease; z-index:2000;
 }
 #toast.show{opacity:1; bottom:26px}
 
