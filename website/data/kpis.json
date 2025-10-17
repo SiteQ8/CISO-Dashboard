@@ -1,8 +1,8 @@
 {
-  "overall_risk": 0.47,
+  "overall_risk": 47%,
   "open_findings": 123,
   "patch_sla_compliance": 0.91,
   "mean_time_to_detect_hours": 3.2,
   "mean_time_to_respond_hours": 7.4,
-  "last_updated": "2025-10-01T10:00:00Z"
+  "last_updated": "2025-10-17T10:00:00Z"
 }
