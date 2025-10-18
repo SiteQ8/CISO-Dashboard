@@ -19,7 +19,7 @@ A practical, open-source starter for a **CISO-friendly security dashboard** — 
 
 ## 📸 Screenshots
 
-<img src="assets/screenshots/overview.png" width="800" alt="Dashboard Overview">
+<img src="assets/screenshots/overview.jpg" width="800" alt="Dashboard Overview">
 <img src="assets/screenshots/controls.png" width="800" alt="Controls Coverage View">
 <img src="assets/screenshots/incidents.png" width="800" alt="Incidents Trend">
 
