@@ -50,7 +50,7 @@ h1{margin:0;color:#f3f4f6;font-size:var(--fs-hero);letter-spacing:.2px}
 /* Desktop collapse (burger can hide links if desired) */
 #nav.collapsed .links{display:none}
 
-/* Mobile dropdown (<=900px) — fixed sheet right below header */
+/* Mobile dropdown (<=900px): fixed sheet right below header */
 @media(max-width:900px){
   #nav{align-items:center}
   /* Hide inline links on mobile */
